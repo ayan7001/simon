@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Simon</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="know-more" clicked="">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="46"
+        height="46"
+        fill="currentColor"
+        class="bi bi-exclamation-circle"
+        viewBox="0 0 16 16"
+        style="color: white"
+      >
+        <path
+          d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+        />
+        <path
+          d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"
+        />
+      </svg>
+    </div>
+    <div id="how-to-play">
+      <h1>How to play?</h1>
+      <ul>
+        <li>Click the “Start Game” button to begin.</li>
+        <li>Simon will light up a random button. Memorize the lit button.</li>
+        <li>
+          Click on the button that lit up earlier. If correct, you’ll advance to
+          the next level.
+        </li>
+        <li>
+          A new button will light up. Memorize all the buttons in the sequence
+          that were previously lit.
+        </li>
+        <li>
+          Click on the buttons in the correct sequence to progress to the next
+          level.
+        </li>
+
+        <li>Enjoy playing Simon!</li>
+      </ul>
+    </div>
+    <div id="game">
+      <button id="start-game">
+        <p id="level-title">Start Game</p>
+      </button>
+      <div class="result"><p id="level-title"></p></div>
+      <div class="container">
+        <div class="row">
+          <div type="button" id="green" class="btn green"></div>
+
+          <div type="button" id="red" class="btn red"></div>
+        </div>
+
+        <div class="row">
+          <div type="button" id="yellow" class="btn yellow"></div>
+          <div type="button" id="blue" class="btn blue"></div>
+        </div>
+        <p id="hl">Highest level: 0</p>
+        <p id="madeby">
+          Made by
+          <a href="www.linkedin.com/in/ayanmallik" target="_blank"
+            >Ayan Mallik</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <script src="./new2.js" charset="utf-8"></script>
+  </body>
+</html>
